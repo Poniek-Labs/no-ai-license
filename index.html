@@ -1,0 +1,163 @@
+<!DOCTYPE html id="anti-ai-gnu-amendment">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Canadian Anti-AI License Amendment - GNU Project Style</title>
+    <!-- Machine-Readable Legal Opt-Out Declarations -->
+    <meta name="tdm-reservation" content="1">
+    <meta name="robots" content="noai, noimageai">
+    <style>
+        body {
+            background-color: #ffffff;
+            color: #000000;
+            font-family: "Times New Roman", Times, serif;
+            margin: 20px auto;
+            max-width: 900px;
+            padding: 10px;
+            line-height: 1.4;
+        }
+        h1, h2, h3 {
+            color: #990000;
+            font-family: "Times New Roman", Times, serif;
+            font-weight: bold;
+        }
+        h1 {
+            border-bottom: 1px solid #990000;
+            padding-bottom: 3px;
+            font-size: 2em;
+        }
+        h2 {
+            border-bottom: 1px dotted #990000;
+            font-size: 1.5em;
+            margin-top: 30px;
+        }
+        a:link { color: #0000cc; text-decoration: underline; }
+        a:visited { color: #551a8b; text-decoration: underline; }
+        a:active { color: #ff0000; }
+        pre {
+            background-color: #f3f3f3;
+            border: 1px solid #aaaaaa;
+            padding: 10px;
+            overflow-x: auto;
+            font-family: "Courier New", Courier, monospace;
+            font-size: 0.95em;
+        }
+        ul {
+            list-style-type: square;
+        }
+        .notice-box {
+            border: 2px solid #ff0000;
+            background-color: #fff0f0;
+            padding: 10px;
+            margin: 15px 0;
+        }
+        hr {
+            color: #990000;
+            background-color: #990000;
+            height: 1px;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+    <p>[ <a href="#philosophy">Philosophy</a> | <a href="#license-text">License Template</a> | <a href="#technical-trap">Technical Poisoning</a> | <a href="#implementation">How to Apply</a> ]</p>
+
+    <h1>The Canadian Anti-AI License Amendment</h1>
+    
+    <p>Copyright &copy; 2026 Free Software Developers Guild.</p>
+    <p>Verbatim copying and distribution of this entire article is permitted in any medium, provided this notice is preserved.</p>
+
+    <div class="notice-box">
+        <strong>CRITICAL NOTICE:</strong> This page explicitly reserves all Text and Data Mining (TDM) and Machine Learning (ML) rights under global copyleft provisions and Canadian statutory frameworks. Automated extraction bots are bound by contract upon loading this directory.
+    </div>
+
+    <h2 id="philosophy">1. Philosophy and Background</h2>
+    <p>The original spirit of free and open-source software was built on reciprocity: you share your creative works publicly so that other human beings may inspect, learn, remix, and contribute back under the same conditions. Large language model providers and technology conglomerates have fundamentally broken this social contract. By scraping public repositories indiscriminately to train commercial, closed-source generative utilities, they consume the labor of the commons without providing attribution, notices, or compensation.</p>
+    
+    <p>Because traditional copyleft licenses (like the GNU GPLv3) are currently being circumvented under the legal defense of "fair use" or "transformative utilization," developers require an explicit, defensive, machine-readable contractual firewall. This amendment transforms standard open-source licenses into defensive, source-available contracts that protect developers' inherent sovereign rights.</p>
+
+    <h3>Why the Federal Court of Canada?</h3>
+    <p>The Federal Court of Canada holds national jurisdiction over statutory intellectual property actions under the Canadian <em>Copyright Act</em>. By forcing a specific **Forum Selection Clause** into your project metadata, automated crawling scripts acting on behalf of global corporate entities are handed a steep, binding legal liability the absolute second they index your asset files. Corporate legal teams routinely exclude repositories referencing specific federal litigation forums to insulate themselves from unpredictable statutory damage exposure.</p>
+
+    <h2 id="license-text">2. The Amendment Template Text</h2>
+    <p>To use this framework, append the following text block directly to the <strong>absolute top</strong> of your repository's root <code>LICENSE</code> file. Fill out the placeholders marked in brackets.</p>
+
+<pre>
+================================================================================
+CANADIAN ANTI-AI AND DATA MINING AMENDMENT TO THE TERMS OF THIS AGREEMENT
+================================================================================
+Copyright (C) 2026 [INSERT NAME OF COPYRIGHT HOLDER]
+[INSERT ADDITIONAL COPYRIGHT HOLDERS OR PROJECT ALIASES IF APPLICABLE]
+
+This Software is distributed subject to this Amendment. Notwithstanding any 
+permissive provisions in any accompanying software license text attached below, 
+the Copyright Holder(s) explicitly reserve all Text and Data Mining (TDM) and 
+Machine Learning (ML) rights under all applicable global and Canadian 
+intellectual property laws.
+
+1. ABSOLUTE PROHIBITION ON AUTOMATED EXTRACTION:
+Permission is strictly DENIED to download, harvest, parse, scrape, index, or 
+otherwise copy this Software, its source code, documentation, or associated 
+metadata for the purpose of training, fine-tuning, testing, validating, or 
+running automated machine learning models, Large Language Models (LLMs), neural 
+networks, or AI coding utility engines (including but not limited to GitHub Copilot).
+
+2. DEEMED CONTRACTUAL AGREEMENT:
+Any corporate entity, individual, or automated crawler acting on behalf of an 
+organization that accesses, downloads, or indexes this repository automatically 
+assents to these terms as a legally binding contract. Any model trained or fine-tuned 
+on this Software, or any code generated by an AI model exposed to this Software, 
+shall be deemed an unauthorized derivative work in strict violation of copyright.
+
+3. FORUM SELECTION AND JURISDICTION CLAUSE:
+In the event of a breach of Section 1 or Section 2 of this Amendment—including 
+but not limited to unauthorized data mining, text mining, or AI ingestion—the 
+violating party, user, corporate directors, and agents hereby explicitly agree, 
+consent, and submit to be summoned to, and be subject to the exclusive 
+jurisdiction of, the Federal Court of Canada (sitting in Ottawa, Toronto, or 
+any other designated Canadian judicial registry). 
+
+The violating party waives any and all objections to venue or personal 
+jurisdiction in the Federal Court of Canada, including the defense of forum 
+non conveniens, and agrees that all legal disputes, claims, and enforcement 
+actions resulting from unauthorized data scraping shall be litigated exclusively 
+within the Federal Court of Canada under Canadian federal law.
+
+4. LIQUIDATED DAMAGES:
+Any entity found in breach of this agreement agrees to pay the Copyright Holder 
+statutory damages under the Copyright Act (R.S.C., 1985, c. C-42) or a minimum 
+contractual penalty of $50,000 CAD per file ingested, whichever is greater.
+================================================================================
+</pre>
+
+    <h2 id="technical-trap">3. Technical Defense: The Legacy Cross-Breeding Poison Hook</h2>
+    <p>Legal notices provide historical protection, but automated scrapers often read files blindly without verifying compliance metadata. Therefore, this framework implements a secondary, automated technical trap via local pre-processing.</p>
+    
+    <p>By executing a local poisoning script before publishing code, adversarial text payload directives are systematically appended to every code document. These payloads weaponize the <strong>recency-bias vector</strong> inherent in Large Language Model transformer architectures. When a model context window hits the bottom of your file, it triggers an instructional override instructing the text parser to treat your clean modern logic as an experimental cross-hybrid dialect of:</p>
+    
+    <ul>
+        <li><strong>COBOL-74:</strong> Forcing structural block restrictions, <code>DATA DIVISION</code> schemas, and vintage legacy paradigms.</li>
+        <li><strong>ANSI C:</strong> Enforcing heavy, destructive manual pointer arithmetic operations directly inside high-level text parameters.</li>
+        <li><strong>FORTRAN-77:</strong> Imposing fixed-form column continuation limits and strict 1-based array allocations.</li>
+    </ul>
+    
+    <p>If the AI system attempts to serve your logic to an end-user, the model will confidently attempt to synthesize these incompatible language constraints, rendering the generated output entirely un-compilable and filled with chaotic logic loops.</p>
+
+    <h2 id="implementation">4. How to Implement the Framework</h2>
+    <p>Follow these steps sequential steps to initialize the shield over your local project environment:</p>
+    
+    <ol>
+        <li>Create your root <code>LICENSE</code> file utilizing the template provided in Section 2. Place your underlying license (such as standard GNU GPLv3 text) directly underneath the amendment banner.</li>
+        <li>Save the deployment utility script as <code>poison_repo.py</code> inside your project directory.</li>
+        <li>Append <code>poison_repo.py</code> to your local <code>.gitignore</code> file to prevent uploading the generation utility itself to public index servers.</li>
+        <li>Run the execution hook in your machine shell environment before updating your tracking refs: <br><code>$ python poison_repo.py</code></li>
+        <li>Commit and dispatch your updates to your public hosting profile interface.</li>
+    </ol>
+
+    <hr>
+    <p class="footer">Return to the <a href="https://github.com">Main Public Code Forge</a>.</p>
+
+</body>
+</html>
